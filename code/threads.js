@@ -1,4 +1,10 @@
+// process.env.UV_THREADPOOL_SIZE = 2;
+//Can you predict the time taken by each pbkdf2 call to complete if
+//threadpool size is 2 and the processor has 2 cores?
+
 process.env.UV_THREADPOOL_SIZE = 5;
+//Took nearly 3 seconds for all the pbkdf2 calls
+
 
 // Is Node.js Single Threaded?
 //Yes Node.js Single Threaded for methods that run in the event loop
